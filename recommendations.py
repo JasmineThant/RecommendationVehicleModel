@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # Load and preprocess car data
-df = pd.read_csv("C:/TestFastAPI/Data3.csv", encoding='cp1252')
+df = pd.read_csv(".../Data.csv", encoding='cp1252')
 
 df['PRICE'] = pd.to_numeric(df['PRICE'], errors='coerce')
 
@@ -84,3 +84,4 @@ def recommend_cars(customer_input, top_n=5):
             break
 
     return recommendations
+
